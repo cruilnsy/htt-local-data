@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tickets",
+  "info": {
+    "name": "ticket"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "ticket_type": {
+      "type": "string"
+    },
+    "qty": {
+      "type": "integer"
+    },
+    "date_start": {
+      "type": "string"
+    },
+    "date_end": {
+      "type": "string"
+    },
+    "sale_limit": {
+      "type": "string"
+    },
+    "order_min": {
+      "type": "string"
+    },
+    "order_max": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "event_id": {
+      "type": "string"
+    }
+  }
+}

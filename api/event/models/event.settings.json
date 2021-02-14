@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "name": "Event",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "team": {
+      "type": "string"
+    },
+    "published": {
+      "type": "boolean"
+    },
+    "flyer_url": {
+      "type": "string"
+    },
+    "venue_name": {
+      "type": "string"
+    },
+    "venue_address": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "showtimes": {
+      "collection": "showtime"
+    }
+  }
+}

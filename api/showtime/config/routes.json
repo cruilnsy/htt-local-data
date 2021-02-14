@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/showtimes",
+      "handler": "showtime.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/showtimes/count",
+      "handler": "showtime.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/showtimes/:id",
+      "handler": "showtime.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/showtimes",
+      "handler": "showtime.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/showtimes/:id",
+      "handler": "showtime.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/showtimes/:id",
+      "handler": "showtime.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

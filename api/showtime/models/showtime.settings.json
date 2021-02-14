@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "showtimes",
+  "info": {
+    "name": "showtime",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "start_t": {
+      "type": "string"
+    },
+    "tz": {
+      "type": "string"
+    },
+    "end_t": {
+      "type": "string"
+    },
+    "venue_id": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "flyer_url": {
+      "type": "string"
+    },
+    "venue_name": {
+      "type": "string"
+    },
+    "venue_address": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string"
+    },
+    "team": {
+      "type": "string"
+    },
+    "tickets": {
+      "collection": "ticket"
+    },
+    "event_id": {
+      "type": "integer",
+      "unique": true
+    }
+  }
+}
